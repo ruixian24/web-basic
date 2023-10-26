@@ -6,70 +6,52 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box1 {
-
+        .box {
+            padding: 10px;
             width: 250px;
-            height: 350px;
-            background-color: gainsboro;
-            display: inline-block;
-            margin: 0;
-
+            height: 20px;
+            background-color: #4d5cbf;
+            color: white;
+            text-align: justify;
         }
 
         .box2 {
-
-            width: 240px;
-            height: 70px;
-            background-color: cornflowerblue;
-            line-height: 70px;
-            color: white;
-            padding-left: 10px;
-        }
-
-        .box2>div {
-            color: black;
+            padding: 10px;
+            width: 250px;
+            height: 230px;
+            background-color: #e1e2e6;
         }
 
         .box3 {
-            width: 210px;
-            height: 50px;
-            background-color: white;
-            display: inline-block;
-            margin: 70px 10px 10px 10px;
-        }
-        .box4 {
-            width: 210px;
-            height: 35px;
-            background-color: white;
-            display: inline-block;
             margin: 10px;
-        }
-        .box5 {
-            width: 210px;
-            height: 50px;
+            padding: 8px;
+            width: 200px;
             background-color: white;
-            display: inline-block;
-            margin: 10px;
         }
 
-
+        .bold-text {
+            font-weight: bold;
+        }
     </style>
+
 </head>
 
 <body>
-    <div class="box1">
-        <div class="box2">
-            <div style="color: white;">최도근님 안녕하세요?</div>
-            <div>페이스북 색감 따라하기</div>
+    <div class="box">최도근님, 안녕하세요?</div>
+    <div class="box2">페이스북 색감 따라하기
+        <div class="box3">
+            <span class="bold-text">박지성</span>
+            SBS에서 월드컵보세요!
         </div>
-        <div class="box-container">
-            <div class="box3"><strong>박지성 </strong>SBS에서 월드컵 보세요!</div>
-            <div class="box4"><strong>안정환 </strong>MBC죠...</div>
-            <div class="box5"><strong>이영표 </strong>KBS는 수신료의 가치를...</div>
+        <div class="box3">
+            <span class="bold-text">안정환</span>
+            MBC죠...
+        </div>
+        <div class="box3">
+            <span class="bold-text">이영표</span>
+            KBS는 수신료의 가치를...
         </div>
     </div>
-    
-        <div id="box2"></div>
 </body>
 
 </html>
