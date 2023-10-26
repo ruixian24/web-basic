@@ -6,39 +6,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .box {
-            
-            padding: 30px;
-            width: 100px;
-            height: 100px;
-            background-color: aquamarine;
+        .box1 {
+
+            width: 250px;
+            height: 350px;
+            background-color: gainsboro;
             display: inline-block;
-            border-top-style:solid;
-            border-left-style: dashed;
-            border-bottom-style: double;
-            border-color: red;
-            border-width: 1px;
+            margin: 0;
+
         }
 
         .box2 {
-            margin: 30px;
-            width: 100px;
-            height: 100px;
-            background-color: red;
-            display: block;
-            border: 1px solid red;
-            border-radius :10px;
-            text-align: center;
-            line-height: 100px;
-        
+
+            width: 240px;
+            height: 70px;
+            background-color: cornflowerblue;
+            line-height: 70px;
+            color: white;
+            padding-left: 10px;
         }
+
+        .box2>div {
+            color: black;
+        }
+
+        .box3 {
+            width: 210px;
+            height: 50px;
+            background-color: white;
+            display: inline-block;
+            margin: 70px 10px 10px 10px;
+        }
+        .box4 {
+            width: 210px;
+            height: 35px;
+            background-color: white;
+            display: inline-block;
+            margin: 10px;
+        }
+        .box5 {
+            width: 210px;
+            height: 50px;
+            background-color: white;
+            display: inline-block;
+            margin: 10px;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <div class="box">1</div>
-    <div class="box2">2</div>
-    <div id="box2"></div>
+    <div class="box1">
+        <div class="box2">
+            <div style="color: white;">최도근님 안녕하세요?</div>
+            <div>페이스북 색감 따라하기</div>
+        </div>
+        <div class="box-container">
+            <div class="box3"><strong>박지성 </strong>SBS에서 월드컵 보세요!</div>
+            <div class="box4"><strong>안정환 </strong>MBC죠...</div>
+            <div class="box5"><strong>이영표 </strong>KBS는 수신료의 가치를...</div>
+        </div>
+    </div>
+    
+        <div id="box2"></div>
 </body>
 
 </html>
