@@ -1,114 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <title>나의 홈페이지</title>
-    <style>
-        body {
-    margin: 0;
-    padding: 0;
-    background-image: url(https://img.freepik.com/free-photo/low-angle-shot-of-the-mesmerizing-starry-sky_181624-27925.jpg?w=996&t=st=1698304245~exp=1698304845~hmac=0ce95e6edcfcbd5ec8d7ab90b9460f391c8ac7baf884789c1adfb2fdd0857a90); /* 별 사진 파일의 경로를 적절하게 지정하세요 */
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    font-family: Arial, sans-serif;
-    text-align: center;
-    color: #fff;
-}
-.highlight {
-    color: #FFA500;
-}
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-}
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://images.unsplash.com/photo-1505506874110-6a7a69069a08?auto=format&fit=crop&q=80&w=1374&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center fixed;
+      background-size: cover;
+    }
 
+    #header {
+      background-color: #404040;
+      overflow: hidden;
+      text-align: right;
+    }
 
-h1 {
-    font-size: 24px;
-}
+    #header a {
+      display: inline-block;
+      color: white;
+      padding: 10px 15px;
+      text-decoration: none;
+    }
 
-p {
-    font-size: 24px;
-    margin: 10px 0;
-}
+    #header a:hover {
+      background-color: rgba(0, 0, 0, 0.9);
+    }
 
-a {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: transparent; /* 버튼 배경색 설정 */
-    color: #fff;
-    text-decoration: none;
-    border: 2px solid #fff;
-    border-radius: 5px;
-    font-weight: bold;
-    margin-top: 10px;
-}
-b {
-    display: inline-block;
-    padding: 10px -2px;
-    background-color: transparent;
-    color: #fff;
-    text-decoration: none;
-    border:none;
-    font-size: 12px;
-    font-family: Arial, sans-serif;
-    font-weight: 300;
-    
-    
-}
-header {
-            background-color: #333333; /* 투명한 배경색 */
-            padding: 10px 0;
+    .content {
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 20px;
+    }
 
-           
-            height: 20px;
-            position: fixed; /* 화면 상단에 고정 */
-            width: 100%; /* 가로폭을 100%로 설정 */
-           
-        }
+    .button-container {
+      margin-top: 100px;
+      text-align: center; 
 
-        nav {
-            text-align: right;
-        }
+    }
 
-        nav ul {
-            list-style-type: none;
-            padding: 0;
-        }
+    .button {
+      display: inline-block;
+      background: transparent;
+      border: 1px solid white;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
 
-        nav li {
-            display: inline-block;
-            margin: 0 20px;
-        }
+    }
 
-        nav a {
-            text-decoration: none;
-            color: #fff;
-            font-weight: bold;
-        }
+    .button img {
+      margin-left: 5px;
 
-    </style>
-    <link rel="stylesheet" type="text/css" href="style.css">
+    }
+  </style>
 </head>
+
 <body>
-    <header>
-        <nav>
-            <ul>
-                <li><b href="#home">Home</a></li>
-                <li><b href="#about">About</a></li>
-                <li><b href="#portfolio">Projects</a></li>
-                <li><b href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="container">
-        <div class="content">
-            <h1>안녕하세요. 제 이름은 <span class="highlight">이서현</span>입니다.</h1>
-            <p>저는 게임 프로그래머 입니다.</p>
-            <a href="#">View my work</a>
-        </div>
+
+  <div id="header">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+  <div class="content">안녕하세요. 제 이름은 <font color="yellow">이서현입니다.</font>
+    <br>저는 게임 개발자입니다.
+    <div class="button-container">
+      <div class="button">
+        View my work
+        <img src="https://ifh.cc/g/6PFfPW.png" alt="arrow icon" width="20" height="20">
+      </div>
     </div>
+  </div>
 </body>
+
 </html>
