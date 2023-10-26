@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>나의 홈페이지</title>
+    <style>
+        body {
+    margin: 0;
+    padding: 0;
+    background-image: url(https://img.freepik.com/free-photo/low-angle-shot-of-the-mesmerizing-starry-sky_181624-27925.jpg?w=996&t=st=1698304245~exp=1698304845~hmac=0ce95e6edcfcbd5ec8d7ab90b9460f391c8ac7baf884789c1adfb2fdd0857a90); /* 별 사진 파일의 경로를 적절하게 지정하세요 */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    color: #fff;
+}
+.highlight {
+    color: #FFA500;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+h1 {
+    font-size: 24px;
+}
+
+p {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: transparent; /* 버튼 배경색 설정 */
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+b {
+    display: inline-block;
+    padding: 10px -2px;
+    background-color: transparent;
+    color: #fff;
+    text-decoration: none;
+    border:none;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    font-weight: 300;
+    
+    
+}
+header {
+            background-color: #333333; /* 투명한 배경색 */
+            padding: 10px 0;
+
+           
+            height: 20px;
+            position: fixed; /* 화면 상단에 고정 */
+            width: 100%; /* 가로폭을 100%로 설정 */
+           
+        }
+
+        nav {
+            text-align: right;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        nav li {
+            display: inline-block;
+            margin: 0 20px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #fff;
+            font-weight: bold;
+        }
+
+    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><b href="#home">Home</a></li>
+                <li><b href="#about">About</a></li>
+                <li><b href="#portfolio">Projects</a></li>
+                <li><b href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="container">
+        <div class="content">
+            <h1>안녕하세요. 제 이름은 <span class="highlight">이서현</span>입니다.</h1>
+            <p>저는 게임 프로그래머 입니다.</p>
+            <a href="#">View my work</a>
+        </div>
+    </div>
+</body>
+</html>
