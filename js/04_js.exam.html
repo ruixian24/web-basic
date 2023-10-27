@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function printNumbers() {
+            let input = prompt("1에서 100까지의 숫자를 입력하세요:");
+
+            if (input === null) {
+                alert("입력이 취소되었습니다.");
+            } else {
+                let number = parseInt(input);
+
+                if (isNaN(number)) {
+                    alert("숫자를 입력해 주세요.");
+                } else if (number < 1 || number > 100) {
+                    alert("1 이상 100 이하의 숫자를 입력해주세요.");
+                } else {
+                    for (let i = 1; i <= number; i++) {
+                        console.log(i);
+                    }
+                    alert("완료되었습니다.");
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <button onclick="printNumbers()">숫자입력하기</button>
+</body>
+
+</html>
