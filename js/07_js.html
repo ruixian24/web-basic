@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            background-color: white;
+            color: white;
+        }
+
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+        }
+
+        .menu-item {
+            cursor: pointer;
+            padding: 10px;
+            border: 2px solid black;
+            background-color: gray;
+            color: white;
+            text-align: center;
+        }
+
+        .menu-item.active {
+            background-color: white;
+            border: 2px solid black;
+            color: black;
+        }
+
+        .menu-item:hover {
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-item" id="menu1">html</div>
+        <div class="menu-item" id="menu2">css</div>
+        <div class="menu-item" id="menu3">javascript</div>
+    </div>
+</body>
+</html>
