@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        #textDisplay {
+            text-align: center;
+            font-size: 24px;
+        }
+        button {
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="inputText" placeholder="텍스트 입력">
+        <button id="displayText">텍스트 표시</button>
+    </div>
+    <div id="textDisplay" style="display: none;"></div>
+    <div>
+        <button id="redButton">빨강</button>
+        <button id="blueButton">파랑</button>
+        <button id="greenButton">초록</button>
+    </div>
+
+    <script>
+        document.getElementById("displayText").addEventListener("click", function() {
+            const inputText = document.getElementById("inputText").value;
+            const textDisplay = document.getElementById("textDisplay");
+
+            if (inputText) {
+                textDisplay.innerHTML = inputText;
+                textDisplay.style.display = "block";
+            } else {
+                alert("텍스트 값을 입력해 주세요");
+                textDisplay.style.display = "none";
+            }
+        });
+
+        function changeTextColor(color) {
+            const textDisplay = document.getElementById("textDisplay");
+            if (textDisplay.style.display === "block") {
+                textDisplay.style.color = color;
+                alert(`텍스트 색이 ${color}로 변경됩니다.`);
+            }
+        }
+
+        document.getElementById("redButton").addEventListener("click", function() {
+            changeTextColor("red");
+        });
+
+        document.getElementById("blueButton").addEventListener("click", function() {
+            changeTextColor("blue");
+        });
+
+        document.getElementById("greenButton").addEventListener("click", function() {
+            changeTextColor("green");
+        });
+    </script>
+</body>
+</html>
