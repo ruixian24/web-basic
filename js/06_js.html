@@ -1,16 +1,19 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <style>
         #textDisplay {
             text-align: center;
             font-size: 24px;
         }
+
         button {
             margin: 10px;
         }
     </style>
 </head>
+
 <body>
     <div>
         <input type="text" id="inputText" placeholder="텍스트 입력">
@@ -24,7 +27,7 @@
     </div>
 
     <script>
-        document.getElementById("displayText").addEventListener("click", function() {
+        document.getElementById("displayText").addEventListener("click", function () {
             const inputText = document.getElementById("inputText").value;
             const textDisplay = document.getElementById("textDisplay");
 
@@ -45,17 +48,18 @@
             }
         }
 
-        document.getElementById("redButton").addEventListener("click", function() {
+        document.getElementById("redButton").addEventListener("click", function () {
             changeTextColor("red");
         });
 
-        document.getElementById("blueButton").addEventListener("click", function() {
+        document.getElementById("blueButton").addEventListener("click", function () {
             changeTextColor("blue");
         });
 
-        document.getElementById("greenButton").addEventListener("click", function() {
+        document.getElementById("greenButton").addEventListener("click", function () {
             changeTextColor("green");
         });
     </script>
 </body>
+
 </html>
